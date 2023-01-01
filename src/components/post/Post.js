@@ -1,42 +1,51 @@
-import React from 'react'
+import React, { useState } from 'react'
 import './post.css'
+import { Users } from '../../dummyData'
 
-const Post = () => {
-  return (
-    <div className='post'>
-        <div className="post-wrapper">
+const Post = ({ post }) => {
+    const [like, setLike] = useState(post.like)
+    const [isLiked, setIsLiked] = useState(false)
 
-            <div className="post-top">
-                <div className="post-top-left">
-                    <img src="/assets/person/pexels-andrea-piacquadio-774909.jpg" alt="woman user" className='post-profile-img' />
-                    <span className="post-user-name">Safak Kdj</span>
-                    <span className="post-date">5 min ago</span>
+    const handleLike = () => {
+        setLike(isLiked ? like -1 : like +1)
+        setIsLiked(!isLiked)
+    }
+
+    return (
+        <div className='post'>
+            <div className="post-wrapper">
+
+                <div className="post-top">
+                    <div className="post-top-left">
+                        <img src={Users.filter((u) => u.id === post.userId)[0].profilePicture} alt="woman user" className='post-profile-img' />
+                        <span className="post-user-name">{Users.filter((u) => u.id === post.userId)[0].username}</span>
+                        <span className="post-date">{post.date}</span>
+                    </div>
+                    <div className="post-top-right">
+                        <i className="fas fa-ellipsis-v"></i>
+                    </div>
                 </div>
-                <div className="post-top-right">
-                <i className="fas fa-ellipsis-v"></i>
+
+                <div className="post-center">
+                    <span className="post-text">{post?.desc}</span>
+                    <img src={post.photo} alt="" className='post-img' />
                 </div>
+
+                <div className="post-bottom">
+                    <div className="post-bottom-left">
+                        <i className="fas fa-thumbs-up" onClick={handleLike}></i>
+                        <i className="fas fa-heart" onClick={handleLike}></i>
+                        <span className="post-like-counter">{like} people liked it</span>
+                    </div>
+
+                    <div className="post-bottom-right">
+                        <div className="post-comment-text">{post.comment} comments</div>
+                    </div>
+                </div>
+
             </div>
-
-            <div className="post-center">
-                <span className="post-text">Hey! Its my first post! :)</span>
-                <img src="assets/post/pexels-afta-putta-gunawan-1036804.jpg" alt="" className='post-img' />
-            </div>
-
-            <div className="post-bottom">
-                <div className="post-bottom-left">
-                <i className="fas fa-thumbs-up"></i>
-                <i className="fas fa-heart"></i>
-                <span className="post-like-counter">32 people liked it</span>
-                </div>
-
-                <div className="post-bottom-right">
-                    <div className="post-comment-text">9 comments</div>
-                </div>
-            </div>
-
         </div>
-    </div>
-  )
+    )
 }
 
 export default Post

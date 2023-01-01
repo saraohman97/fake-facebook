@@ -1,5 +1,7 @@
 import React from 'react'
 import './sidebar.css'
+import { Users } from '../../dummyData'
+import CloseFriend from '../closeFriend/CloseFriend'
 
 const Sidebar = () => {
   return (
@@ -53,46 +55,9 @@ const Sidebar = () => {
 
 
         <ul className="sidebar-friend-list">
-          <li className="sidebar-frind">
-            <img src="/assets/person/pexels-lukas-rychvalsky-670720.jpg" alt="woman" className="sidebar-friend-img" />
-            <span className="sidebar-friend-name">Jane Doe</span>
-          </li>
-          <li className="sidebar-frind">
-            <img src="/assets/person/pexels-lukas-rychvalsky-670720.jpg" alt="woman" className="sidebar-friend-img" />
-            <span className="sidebar-friend-name">Jane Doe</span>
-          </li>
-          <li className="sidebar-frind">
-            <img src="/assets/person/pexels-lukas-rychvalsky-670720.jpg" alt="woman" className="sidebar-friend-img" />
-            <span className="sidebar-friend-name">Jane Doe</span>
-          </li>
-          <li className="sidebar-frind">
-            <img src="/assets/person/pexels-lukas-rychvalsky-670720.jpg" alt="woman" className="sidebar-friend-img" />
-            <span className="sidebar-friend-name">Jane Doe</span>
-          </li>
-          <li className="sidebar-frind">
-            <img src="/assets/person/pexels-lukas-rychvalsky-670720.jpg" alt="woman" className="sidebar-friend-img" />
-            <span className="sidebar-friend-name">Jane Doe</span>
-          </li>
-          <li className="sidebar-frind">
-            <img src="/assets/person/pexels-lukas-rychvalsky-670720.jpg" alt="woman" className="sidebar-friend-img" />
-            <span className="sidebar-friend-name">Jane Doe</span>
-          </li>
-          <li className="sidebar-frind">
-            <img src="/assets/person/pexels-lukas-rychvalsky-670720.jpg" alt="woman" className="sidebar-friend-img" />
-            <span className="sidebar-friend-name">Jane Doe</span>
-          </li>
-          <li className="sidebar-frind">
-            <img src="/assets/person/pexels-lukas-rychvalsky-670720.jpg" alt="woman" className="sidebar-friend-img" />
-            <span className="sidebar-friend-name">Jane Doe</span>
-          </li>
-          <li className="sidebar-frind">
-            <img src="/assets/person/pexels-lukas-rychvalsky-670720.jpg" alt="woman" className="sidebar-friend-img" />
-            <span className="sidebar-friend-name">Jane Doe</span>
-          </li>
-          <li className="sidebar-frind">
-            <img src="/assets/person/pexels-lukas-rychvalsky-670720.jpg" alt="woman" className="sidebar-friend-img" />
-            <span className="sidebar-friend-name">Jane Doe</span>
-          </li>
+          {Users.map(u => (
+            <CloseFriend key={u.id} user={u} />
+          ))}
         </ul>
       </div>
     </div>

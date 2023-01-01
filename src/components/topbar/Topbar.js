@@ -23,15 +23,15 @@ const Topbar = () => {
         <div className="topbar-icons">
 
           <div className="topbar-icon-item">
-            <i class="fas fa-user"></i>
+            <i className="fas fa-user"></i>
             <div className="topbar-icon-badge">1</div>
           </div>
           <div className="topbar-icon-item">
-            <i class="far fa-comment-dots"></i>
+            <i className="far fa-comment-dots"></i>
             <div className="topbar-icon-badge">2</div>
           </div>
           <div className="topbar-icon-item">
-            <i class="fas fa-bell"></i>
+            <i className="fas fa-bell"></i>
             <div className="topbar-icon-badge">1</div>
           </div>
         </div>
