@@ -36,7 +36,7 @@ const Topbar = () => {
           </div>
         </div>
 
-        <img src="/assets/person/pexels-andrea-piacquadio-774909.jpg" alt="user brunette" className='topbar-img' />
+        <img src="/assets/person/person1.jpg" alt="user brunette" className='topbar-img' />
       </div>
     </div>
   )
