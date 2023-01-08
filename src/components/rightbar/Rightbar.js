@@ -4,6 +4,7 @@ import { Users } from '../../dummyData'
 import Online from '../online/Online'
 
 const Rightbar = ({ profile }) => {
+  const PF = process.env.REACT_APP_PUBLIC_FOLDER
 
   const HomeRightbar = () => {
     return (
@@ -57,7 +58,7 @@ const Rightbar = ({ profile }) => {
         <div className="rightbar-followings">
           <div className="rightbar-following">
             <img
-              src="assets/person/person1.jpg"
+              src={`${PF}person/person1.jpg`}
               className='rightbar-following-img'
               alt=""
             />
@@ -66,7 +67,7 @@ const Rightbar = ({ profile }) => {
 
           <div className="rightbar-following">
             <img
-              src="assets/person/person2.jpg"
+              src={`${PF}person/person2.jpg`}
               className='rightbar-following-img'
               alt=""
             />
@@ -75,7 +76,7 @@ const Rightbar = ({ profile }) => {
 
           <div className="rightbar-following">
             <img
-              src="assets/person/person3.jpg"
+              src={`${PF}person/person3.jpg`}
               className='rightbar-following-img'
               alt=""
             />
@@ -84,7 +85,7 @@ const Rightbar = ({ profile }) => {
 
           <div className="rightbar-following">
             <img
-              src="assets/person/person4.jpg"
+              src={`${PF}person/person4.jpg`}
               className='rightbar-following-img'
               alt=""
             />
@@ -93,7 +94,7 @@ const Rightbar = ({ profile }) => {
 
           <div className="rightbar-following">
             <img
-              src="assets/person/person5.jpg"
+              src={`${PF}person/person5.jpg`}
               className='rightbar-following-img'
               alt=""
             />
@@ -102,7 +103,7 @@ const Rightbar = ({ profile }) => {
 
           <div className="rightbar-following">
             <img
-              src="assets/person/person7.jpg"
+              src={`${PF}person/person6.jpg`}
               className='rightbar-following-img'
               alt=""
             />

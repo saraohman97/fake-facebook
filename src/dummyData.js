@@ -1,52 +1,52 @@
 export const Users = [
     {
         id: 1,
-        profilePicture: "/assets/person/person1.jpg",
+        profilePicture: "person/person1.jpg",
         username: "Margarethe Dunmore"
     },
     {
         id: 2,
-        profilePicture: "/assets/person/person2.jpg",
+        profilePicture: "person/person2.jpg",
         username: "Dave Shallcross"
     },
     {
         id: 3,
-        profilePicture: "/assets/person/person3.jpg",
+        profilePicture: "person/person3.jpg",
         username: "Pearla Filov"
     },
     {
         id: 4,
-        profilePicture: "/assets/person/person4.jpg",
+        profilePicture: "person/person4.jpg",
         username: "Friedrick Marler"
     },
     {
         id: 5,
-        profilePicture: "/assets/person/person5.jpg",
+        profilePicture: "person/person5.jpg",
         username: "Abby McPartling"
     },
     {
         id: 6,
-        profilePicture: "/assets/person/person6.jpg",
+        profilePicture: "person/person6.jpg",
         username: "Neddy Pieroni"
     },
     {
         id: 7,
-        profilePicture: "/assets/person/person7.jpg",
+        profilePicture: "person/person7.jpg",
         username: "Conchita Dunklee"
     },
     {
         id: 8,
-        profilePicture: "/assets/person/person8.jpg",
+        profilePicture: "person/person8.jpg",
         username: "Steve Lattimore"
     },
     {
         id: 9,
-        profilePicture: "/assets/person/person9.jpg",
+        profilePicture: "person/person9.jpg",
         username: "Glynnis Booler"
     },
     {
         id: 10,
-        profilePicture: "/assets/person/person10.jpg",
+        profilePicture: "person/person10.jpg",
         username: "Adrian Drugan"
     }
 ]
@@ -55,7 +55,7 @@ export const Posts = [
     {
         id: 11,
         desc: "Cras non velit nec nisi vulputate nonummy. Maecenas tincidunt lacus at velit. Vivamus vel nulla eget eros elementum pellentesque. Quisque porta volutpat erat.",
-        photo: "assets/post/post1.jpg",
+        photo: "post/post1.jpg",
         date: "10/4/2022",
         userId: 1,
         like: 1,
@@ -64,7 +64,7 @@ export const Posts = [
     {
         id: 12,
         desc: "Nunc rhoncus dui vel sem. Sed sagittis. Nam congue, risus semper porta volutpat, quam pede lobortis ligula, sit amet eleifend pede libero quis orci. Nullam molestie nibh in lectus. Pellentesque at nulla. Suspendisse potenti. Cras in purus eu magna vulputate luctus. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Vivamus vestibulum sagittis sapien.",
-        photo: "assets/post/post2.jpg",
+        photo: "post/post2.jpg",
         date: "9/3/2022",
         userId: 2,
         like: 10,
@@ -73,7 +73,7 @@ export const Posts = [
     {
         id: 13,
         desc: "Pellentesque eget nunc. Donec quis orci eget orci vehicula condimentum. Curabitur in libero ut massa volutpat convallis. Morbi odio odio, elementum eu, interdum eu, tincidunt in, leo.",
-        photo: "assets/post/post3.jpg",
+        photo: "post/post3.jpg",
         date: "6/10/2022",
         userId: 3,
         like: 113,
@@ -82,7 +82,7 @@ export const Posts = [
     {
         id: 14,
         desc: "Sed sagittis. Nam congue, risus semper porta volutpat, quam pede lobortis ligula, sit amet eleifend pede libero quis orci. Nullam molestie nibh in lectus. Pellentesque at nulla. Suspendisse potenti. Cras in purus eu magna vulputate luctus. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Vivamus vestibulum sagittis sapien. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Etiam vel augue.",
-        photo: "assets/post/post4.jpg",
+        photo: "post/post4.jpg",
         date: "9/18/2022",
         userId: 4,
         like: 4,
@@ -91,7 +91,7 @@ export const Posts = [
     {
         id: 15,
         desc: "Integer tincidunt ante vel ipsum. Praesent blandit lacinia erat.",
-        photo: "assets/post/post5.jpg",
+        photo: "post/post5.jpg",
         date: "9/15/2022",
         userId: 5,
         like: 5,
@@ -100,7 +100,7 @@ export const Posts = [
     {
         id: 16,
         desc: "Pellentesque viverra pede ac diam. Cras pellentesque volutpat dui. Maecenas tristique, est et tempus semper, est quam pharetra magna, ac consequat metus sapien ut nunc. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Mauris viverra diam vitae quam. Suspendisse potenti. Nullam porttitor lacus at turpis. Donec posuere metus vitae ipsum. Aliquam non mauris. Morbi non lectus. Aliquam sit amet diam in magna bibendum imperdiet.",
-        photo: "assets/post/post6.jpg",
+        photo: "post/post6.jpg",
         date: "5/11/2022",
         userId: 6,
         like: 12,
@@ -109,7 +109,7 @@ export const Posts = [
     {
         id: 17,
         desc: "Proin leo odio, porttitor id, consequat in, consequat ut, nulla. Sed accumsan felis. Ut at dolor quis odio consequat varius. Integer ac leo. Pellentesque ultrices mattis odio.",
-        photo: "assets/post/post7.jpg",
+        photo: "post/post7.jpg",
         date: "3/9/2022",
         userId: 7,
         like: 7,
@@ -118,7 +118,7 @@ export const Posts = [
     {
         id: 18,
         desc: "Pellentesque ultrices mattis odio. Donec vitae nisi. Nam ultrices, libero non mattis pulvinar, nulla pede ullamcorper augue, a suscipit nulla elit ac nulla. Sed vel enim sit amet nunc viverra dapibus.",
-        photo: "assets/post/post8.jpg",
+        photo: "post/post8.jpg",
         date: "8/2/2022",
         userId: 8,
         like: 2,
@@ -127,7 +127,7 @@ export const Posts = [
     {
         id: 19,
         desc: "Maecenas tristique, est et tempus semper, est quam pharetra magna, ac consequat metus sapien ut nunc.",
-        photo: "assets/post/post9.jpg",
+        photo: "post/post9.jpg",
         date: "2/24/2022",
         userId: 9,
         like: 5,
@@ -136,7 +136,7 @@ export const Posts = [
     {
         id: 20,
         desc: "Nullam varius. Nulla facilisi. Cras non velit nec nisi vulputate nonummy.",
-        photo: "assets/post/post10.jpg",
+        photo: "post/post10.jpg",
         date: "3/29/2022",
         userId: 10,
         like: 1,

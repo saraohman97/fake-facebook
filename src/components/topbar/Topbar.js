@@ -1,12 +1,13 @@
 import React from 'react'
 import './topbar.css'
+import { Link } from 'react-router-dom'
 
 const Topbar = () => {
   return (
     <div className='topbar-container'>
 
       <div className="topbar-left">
-        <span className="topbar-logo">Lamasocial</span>
+        <Link to='/' style={{ textDecoration: 'none' }}><span className="topbar-logo">Lamasocial</span></Link>
       </div>
 
       <div className="topbar-center">
